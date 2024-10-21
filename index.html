@@ -3,12 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dilshod Yadgarov Resume</title>
+    <title>Resume DY</title>
+    <style>
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .resume-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 600px;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .resume-header {
+            border-bottom: 3px solid #0073e6;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .resume-header h1 {
+            font-size: 2.5rem;
+            color: #0073e6;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 10px 20px;
+            color: #ffffff;
+            background-color: #0073e6;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #005bb5;
+        }
+
+        .footer {
+            border-top: 3px solid #0073e6;
+            padding-top: 15px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+            transition: opacity 0.3s ease;
+        }
+
+        .icon:hover {
+            opacity: 0.7;
+        }
+        .footer-icon {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icon-label {
+            font-size: 1rem;
+            color: #000; 
+            opacity: 0.6; 
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-icon:hover .icon-label {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
-    <h1>Dilshod Yadgarov Resume</h1>
-    <p>You can view my resume by clicking the link below:</p>
-    <a href="LinkedinCV2024.pdf" target="_blank">View Resume in English</a>
-    <a href="resumeRU.pdf" target="_blank">View Resume in Russian</a>
+    <div class="resume-container">
+        <div class="resume-header">
+            <h1>Dilshod Yadgarov Resume</h1>
+        </div>
+
+        <div class="resume-section">
+            <h2>Download My Resume</h2>
+            <p>You can view and download my resume in both English and Russian using the links below:</p>
+            <a href="resumeEN.pdf" class="download-button" target="_blank">Resume in English</a>
+            <a href="resumeRU.pdf" class="download-button" target="_blank">Резюме на русском</a>
+        </div>
+        
+        <div class="footer">
+            <a href="https://www.linkedin.com/in/dilshod-iadgarov-69kk9818/" target="_blank" class="footer-icon">
+                <img src="./assets//LinkedIn_icon.png" alt="LinkedIn Profile" class="icon">
+                <span class="icon-label">LinkedIn</span>
+            </a>
+            <a href="https://podolsk.hh.ru/applicant/resumes/view?resume=c8f1b836ff0dccbbf80039ed1f397a5a754d70" target="_blank" class="footer-icon">
+                <img src="./assets//HeadHunter_logo.png" alt="HeadHunter Profile" class="icon">
+                <span class="icon-label">HeadHunter</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
